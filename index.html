@@ -398,9 +398,11 @@
         .cb-anglais { background: #ffedd5; color: #9a3412; }
         .cb-anglais .cb-badge { color: #c2410c; }
 
+        .cb-francais { background: #ccfbf1; color: #115e59; }
+        .cb-francais .cb-badge { color: #0f766e; }
+
         .cb-svt { background: #fef3c7; color: #92400e; }
         .cb-physique { background: #e0e7ff; color: #3730a3; }
-        .cb-francais { background: #fee2e2; color: #991b1b; }
         .cb-ens-sci { background: #e0f2fe; color: #075985; }
         .cb-techno { background: #fae8ff; color: #4c1d95; }
 
@@ -495,6 +497,7 @@
         .ld-msgn { background: #2563eb; }
         .ld-eco-droit { background: #f59e0b; }
         .ld-anglais { background: #ea580c; }
+        .ld-francais { background: #14b8a6; }
 
         .total-hours { font-size: 13px; font-weight: 800; }
         .total-hours span { color: var(--primary); }
@@ -680,10 +683,23 @@
                         <th><span class="time-main">16h00</span><span class="time-end">17h00</span></th>
                         <td data-day="1"></td><td data-day="2"></td><td data-day="3"></td><td data-day="4"></td><td data-day="6"></td><td data-day="0"></td>
                     </tr>
-                    <!-- 17h — Droit Vendredi 17-19 -->
+                    <!-- 17h — Français Mercredi 17-19 / Droit Vendredi 17-19 -->
                     <tr>
                         <th><span class="time-main">17h00</span><span class="time-end">18h00</span></th>
-                        <td data-day="1"></td><td data-day="2"></td><td data-day="3"></td><td data-day="4"></td>
+                        <td data-day="1"></td><td data-day="2"></td>
+                        <td data-day="3" rowspan="2">
+                            <div class="course-block cb-francais" data-course-id="francais">
+                                <span class="status-badge badge-cancelled">Annulé</span>
+                                <span class="status-badge badge-postponed">Reporté</span>
+                                <span class="cb-name">Français</span>
+                                <div class="cb-details">
+                                    <span class="cb-badge">2h</span>
+                                    <span class="cb-time">17h – 19h</span>
+                                </div>
+                                <div class="cb-custom-note"></div>
+                            </div>
+                        </td>
+                        <td data-day="4"></td>
                         <td data-day="5" rowspan="2">
                             <div class="course-block cb-eco-droit" data-course-id="eco-droit-ven">
                                 <span class="status-badge badge-cancelled">Annulé</span>
@@ -701,7 +717,7 @@
                     <!-- 18h -->
                     <tr>
                         <th><span class="time-main">18h00</span><span class="time-end">19h00</span></th>
-                        <td data-day="1"></td><td data-day="2"></td><td data-day="3"></td><td data-day="4"></td><td data-day="6"></td><td data-day="0"></td>
+                        <td data-day="1"></td><td data-day="2"></td><td data-day="4"></td><td data-day="6"></td><td data-day="0"></td>
                     </tr>
                     <!-- 19h — Maths Lun / Marketing Mar / Philo Mer / Histoire Jeu -->
                     <tr>
@@ -773,9 +789,10 @@
                 <div class="legend-tag"><span class="legend-dot ld-histoire"></span>Histoire-Géo</div>
                 <div class="legend-tag"><span class="legend-dot ld-msgn"></span>MSGN</div>
                 <div class="legend-tag"><span class="legend-dot ld-eco-droit"></span>Droit &amp; Éco</div>
+                <div class="legend-tag"><span class="legend-dot ld-francais"></span>Français</div>
                 <div class="legend-tag"><span class="legend-dot ld-anglais"></span>Anglais</div>
             </div>
-            <div class="total-hours">Volume : <span>16 h / semaine</span></div>
+            <div class="total-hours">Volume : <span>18 h / semaine</span></div>
         </div>
     </section>
 </main>
